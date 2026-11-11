@@ -23,3 +23,65 @@ Tres alternativas a GitHub que existen en el mercado:
 -Bitbucket: Es una plataforma desarrollada por Atlassian que permite alojar repositorios Git, administrar proyectos y facilitar la colaboración entre desarrolladores. Se integra con otras herramientas como Jira.
 
 -Azure Repos: Es un servicio de Microsoft que permite almacenar y administrar repositorios de código mediante Git o Team Foundation Version Control (TFVC). Facilita el trabajo colaborativo y la administración de proyectos de software.
+
+
+ **Glosario básico:** 
+ 
+- Commit (Guardar cambios)
+Es una operación que permite registrar los cambios que hemos realizado en un proyecto dentro del historial de Git. También nos permite escribir un mensaje corto explicando qué modificaciones hicimos.
+
+Ejemplo práctico: Si agregamos un menú de navegación a nuestra página web, podemos registrar ese cambio con el siguiente comando:
+git add .
+git commit -m "Agregamos el menú de navegación"
+
+
+- Branch (Rama)
+Es una herramienta que permite crear diferentes ramas dentro de un mismo proyecto para trabajar en nuevas funcionalidades sin modificar directamente la rama principal. También permite identificar en qué rama estamos trabajando.
+
+Ejemplo práctico: Si estamos desarrollando una página web y queremos crear un inicio de sesión, podemos crear una rama llamada login para trabajar en esa funcionalidad sin afectar la rama principal.
+git branch login
+
+
+- Merge (Fusión)
+Es una operación que permite unir los cambios realizados en una rama con otra. Se utiliza cuando terminamos de desarrollar una funcionalidad y queremos integrarla al proyecto principal.
+
+Ejemplo práctico: Si terminamos de desarrollar el inicio de sesión en la rama login, podemos unir esos cambios con la rama principal.
+git merge login
+
+
+- Pull y Push
+Son dos comandos que permiten sincronizar nuestro proyecto local con un repositorio remoto, como GitHub.
+
+Pull: Permite traer los cambios que se encuentran en el repositorio remoto y actualizar nuestro proyecto local.
+
+Ejemplo: Un compañero subió modificaciones a GitHub y nosotros necesitamos traerlas a nuestro computador.
+git pull
+
+
+Push: Permite enviar los cambios que hemos registrado en nuestro repositorio local hacia el repositorio remoto.
+
+Ejemplo: Terminamos de modificar nuestro proyecto y queremos subir los cambios a GitHub para que nuestros compañeros puedan verlos.
+git push
+
+
+- Pull Request (PR)
+Es una solicitud que se realiza para proponer que los cambios desarrollados en una rama sean revisados e incorporados a otra rama. Permite que otros integrantes del equipo revisen el código antes de aceptar las modificaciones.
+
+Ejemplo práctico: Terminamos de desarrollar el inicio de sesión y queremos agregarlo al proyecto principal. Creamos un Pull Request para que nuestro profesor o compañeros revisen el código y decidan si se puede integrar.
+- Clone (Clonar)
+Es una operación que permite copiar un repositorio remoto, como uno de GitHub, directamente a nuestro computador. De esta manera podemos acceder a los archivos, modificarlos y trabajar en el proyecto desde nuestra terminal o editor de código.
+
+Ejemplo práctico: Nuestro profesor comparte un enlace de un proyecto en GitHub y nosotros queremos descargarlo para trabajar en él desde Visual Studio Code.
+git clone https://github.com/usuario/proyecto.git
+
+
+- Upstream y Origin
+Son nombres que se utilizan para identificar repositorios remotos con los que trabajamos en Git.
+
+Origin: Es el nombre que normalmente se asigna al repositorio remoto original que clonamos o al repositorio remoto principal de nuestro proyecto. Allí podemos subir nuestros cambios.
+
+Upstream: Es el nombre que normalmente se utiliza para identificar el repositorio original del que proviene un proyecto cuando trabajamos con una copia propia (fork).
+
+Ejemplo práctico: Imagina que encuentras un proyecto en GitHub y quieres colaborar en él. Primero haces una copia en tu propia cuenta de GitHub (fork). En ese caso:
+- origin: es tu copia del proyecto en tu cuenta de GitHub.
+- upstream: es el repositorio original del creador del proyecto.
