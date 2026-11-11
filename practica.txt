@@ -1,0 +1,1 @@
+Esta pratica fue realizada para el repaso en el manejo de ramas y poder guardar la informacion en las ramas correspondientes y asi mismo poder subirlo a Git Hub 
