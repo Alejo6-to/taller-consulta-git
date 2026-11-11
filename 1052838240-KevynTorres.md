@@ -26,7 +26,7 @@ Tres alternativas a GitHub que existen en el mercado:
 
 
  **Glosario básico:** 
- 
+
 - Commit (Guardar cambios)
 Es una operación que permite registrar los cambios que hemos realizado en un proyecto dentro del historial de Git. También nos permite escribir un mensaje corto explicando qué modificaciones hicimos.
 
@@ -85,3 +85,22 @@ Upstream: Es el nombre que normalmente se utiliza para identificar el repositori
 Ejemplo práctico: Imagina que encuentras un proyecto en GitHub y quieres colaborar en él. Primero haces una copia en tu propia cuenta de GitHub (fork). En ese caso:
 - origin: es tu copia del proyecto en tu cuenta de GitHub.
 - upstream: es el repositorio original del creador del proyecto.
+
+
+
+**La importancia de las ramas (Branches):**
+Las ramas (Branches) son importantes en un proyecto de software porque permiten trabajar en diferentes funcionalidades sin modificar directamente el código de la rama principal. Su objetivo es organizar el desarrollo del proyecto y evitar que los cambios que estamos realizando afecten el funcionamiento de lo que ya está construido.
+
+Las ramas sirven para desarrollar nuevas funciones, corregir errores, realizar pruebas y experimentar con diferentes modificaciones sin alterar el proyecto principal. Cuando terminamos el trabajo y verificamos que todo funciona correctamente, podemos unir los cambios a la rama principal mediante una operación llamada Merge.
+-Ventajas en el trabajo individual:
+- Permiten desarrollar nuevas funcionalidades sin afectar el código principal.
+- Facilitan realizar pruebas y experimentar con nuevas ideas.
+- Ayudan a organizar mejor el trabajo.
+- Permiten corregir errores sin modificar directamente la versión principal del proyecto.
+- Facilitan regresar a la rama principal cuando terminamos una modificación.
+Ventajas en el trabajo en equipo:
+- Permiten que varios desarrolladores trabajen en diferentes funcionalidades al mismo tiempo.
+- Evitan que todos tengan que modificar directamente el mismo código principal.
+- Facilitan revisar los cambios antes de incorporarlos al proyecto.
+- Ayudan a organizar las tareas y responsabilidades de cada integrante.
+- Permiten integrar los trabajos de diferentes compañeros mediante Merge.
